@@ -14,7 +14,7 @@ __M["js/config.js"] = (() => {
 // http:// ou https:// compris, sans barre finale). Mettre ici l'adresse de CHAQUE instance Grist
 // qui porte un document SOURCE ou CIBLE.
 const GRIST_ORIGINS = [
-  "http://optimis-developpement.minint.fr",
+  "https://docs.getgrist.com",
   "https://grist.numerique.gouv.fr",
   ];
 
