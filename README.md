@@ -118,62 +118,7 @@ partent, puis chaque modification.
 - **Suivi clair** : une carte par export et par réception, dernier envoi, erreurs expliquées,
   historique replié des changements depuis la dernière visite, avec numéro de ligne, valeurs
   avant et après, et colonnes ajoutées à l'export.
-- **Aide intégrée** : tutoriel en images, « Qui fait quoi ? », consignes prêtes à envoyer par
-  courriel. Français et anglais, thème clair ou sombre.
 
-<table>
-<tr>
-<td width="50%" valign="top">
-<img src="docs/images/readme/13-source-actif.png" alt="Carte de l'export Annuaire dans la SOURCE, avec deux destinataires actifs">
-<br><sub>Dans la SOURCE, chaque destinataire a sa ligne : pause, reprise, révocation.</sub>
-</td>
-<td width="50%" valign="top">
-<img src="docs/images/readme/20-echange-mode.png" alt="Ajout d'un destinataire : choix du mode, dans un seul sens, dans les deux sens (Échange) ou lien public">
-<br><sub>Trois modes par destinataire, dont l'Échange dans les deux sens.</sub>
-</td>
-</tr>
-</table>
-
-## Installation
-
-**Prérequis** : deux documents de la même instance Grist, version 1.7.11 ou plus récente, dans un
-espace d'équipe ; un propriétaire du document SOURCE, un éditeur du document CIBLE (propriétaire
-en Échange). **Aucune dépendance** : ni bibliothèque, ni étape de build, ni service tiers.
-
-1. Publier ce dossier tel quel sur une adresse https (GitHub Pages ou tout hébergement de fichiers
-   statiques). Cette adresse est celle du widget.
-2. Dans chaque document : **Ajouter**, **Ajouter une page**, vue **Personnalisée**, **URL
-   personnalisée**, coller l'adresse, **Ajouter un widget**.
-3. Dans le panneau de droite, accepter l'**accès complet**.
-
-Le widget fonctionne avec `grist.numerique.gouv.fr` et `docs.getgrist.com`. Pour une autre
-instance, ajouter son adresse dans `js/config.js` et dans la CSP de `index.html`.
-
-### Accès au document
-
-- **Accès complet** (`requiredAccess: 'full'`) : le widget lit la structure de l'ensemble du
-  document (tables et colonnes, pour proposer exports et destinations). Il crée sa table technique
-  et ses colonnes de suivi, écrit dans les tables de destination choisies et, pour un
-  propriétaire, gère les webhooks et les règles d'accès du lien public. Un accès en lecture ne
-  permettrait aucune de ces écritures.
-- **Réseau** : en dehors de l'API des widgets, le widget ne parle qu'à l'instance Grist, par une
-  seule fonction (`gristFetch`, `js/grist.js`) qui refuse toute autre origine et n'envoie aucun
-  cookie. La CSP de `index.html` reprend la même liste.
-- **Navigateur** : `localStorage` (clés `gristsync.*`) garde la langue, le thème, l'heure de la
-  dernière visite par document CIBLE et un identifiant de navigateur tiré au hasard. Aucune donnée
-  du document n'y est écrite.
-
-## Sécurité
-
-- Seules les colonnes cochées quittent le document SOURCE.
-- Chaque réception a sa propre clé d'écriture, testée sur son journal et jamais affichée en
-  entier. Le lien du formulaire est un droit d'écriture : il ne se diffuse pas.
-- La CIBLE rejette et signale les lignes forgées (« Arrivées suspectes ») ; un bouton coupe le
-  lien, et une nouvelle invitation fait reprendre la même réception, avec ses tables.
-- Les codes ne contiennent que des noms de tables et de colonnes, une fiche et une adresse
-  d'écriture : ils se transmettent à la seule personne concernée, comme un mot de passe.
-
-L'analyse complète est dans [`SECURITY.md`](SECURITY.md).
 
 ## Limites
 
