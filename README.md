@@ -30,6 +30,21 @@ l'original.
 - **Dans les deux sens si besoin** : en mode Échange, deux documents se tiennent à jour l'un
   l'autre.
 
+## comment installer les deux fichiers
+
+Dans un document GRIST où la table de référence se trouve:
+- créer une table puis une vue personnalisée liée à cette table.
+- Choisir "widget custom builder".
+- Cliquer sur "option de la vue", dans "niveau d'accès", choisir "accès complet au document".
+- Cliquer sur "..." (au dessus de la vue personnalisée).
+- cliquer sur "ouvir la configuration".
+- Dans l'onglet html, copier - coller le contenu de syncplus-builder.html
+- dans l'onglet javascrit, copier - coller le contenu de syncplus-builder2.js.
+- Si vous avez un GRIST autohébergé: soit ajouter l'URL de votre GRIST dans la partie js/config.js  après "https://grist.numerique.gouv.fr", (aller à la ligne, ajouter "https://mongrist.mondom.fr",), soit remplacer les URL par celle de votre GRIST
+- cliquer sur "preview"
+- cliquer sur "enregistrer".
+Dans le document devant réceptionner les mises à jour de la table de référence, refaire exactement les mêmes étapes que ci-dessus.
+
 ## Comment ça marche
 
 ```mermaid
@@ -80,8 +95,7 @@ partent, puis chaque modification.
 </tr>
 </table>
 
-Le pas à pas complet, capture par capture, est dans le [tutoriel](docs/04-tutoriel.md). Il est
-aussi dans le widget (onglet **Tutoriel**), et chaque étape des assistants a son aide en images.
+
 
 ## Fonctionnalités
 
