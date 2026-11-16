@@ -135,7 +135,7 @@ partent, puis chaque modification.
 | Pour | Lire |
 |---|---|
 | Brancher une synchro, capture par capture | [`docs/04-tutoriel.md`](docs/04-tutoriel.md) |
-| Analyse de sécurité | [`SECURITY.md`](SECURITY.md) |
+
 
 ## Licence
 
