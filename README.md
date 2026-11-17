@@ -139,7 +139,7 @@ partent, puis chaque modification.
 | Pour | Lire |
 |---|---|
 | Brancher une synchro, capture par capture | [`docs/04-tutoriel.md`](docs/04-tutoriel.md) |
-| fonctionnement détaillé du widet | [`docs/mecanisme-syncplus.md`](mecanisme-syncplus.md) |
+| fonctionnement détaillé du widget | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
 
 
 ## Licence
