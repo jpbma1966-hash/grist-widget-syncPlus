@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="img/grist-factory-logo.jpg" alt="" width="56" height="56">
+<img src="docs/images/grist-factory-logo.jpg" alt="" width="56" height="56">
 
 # préambule
 
