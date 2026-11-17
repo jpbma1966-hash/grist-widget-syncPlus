@@ -139,7 +139,18 @@ partent, puis chaque modification.
 | Pour | Lire |
 |---|---|
 | Brancher une synchro, capture par capture | [`docs/04-tutoriel.md`](docs/04-tutoriel.md) |
-| fonctionnement détaillé du widget | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| principe général du widget | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Vocabulaire et tables techniques | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Le code HTML | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Architecture du JavaScript | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Le démarrage (`main.js`) | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Les modules un par un | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Variables et constantes | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Les enchaînements de bout en bout | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Mécanismes fins | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Sécurité | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Ce qui change dans la version « Constructeur » | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
+| Index des fonctions clés | [`docs/mecanisme-syncplus.md`](docs/mecanisme-syncplus.md) |
 
 
 ## Licence
