@@ -2,6 +2,10 @@
 
 <img src="img/grist-factory-logo.jpg" alt="" width="56" height="56">
 
+# préambule
+
+Ce widget est un fork de https://github.com/grist-factory/grist-widget-syncPlus. Le plus gros du travail était donc déjà fait. Il a été conçu pour lever la principale contrainte du widget source, à savoir, être obligé de copier, modifier le widget dans le cas où l'instance GRIST ne se trouve pas dans config.js et RCP (voir le widget d'origine).
+
 # Synchro Grist
 
 **Recopiez des tables d'un document Grist dans un autre, tenues à jour toutes seules.**<br>
